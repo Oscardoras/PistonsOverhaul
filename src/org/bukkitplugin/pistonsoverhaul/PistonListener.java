@@ -194,6 +194,7 @@ public class PistonListener implements Listener {
 	}
 	
 	protected static void rotate(Rotation rotation, BlockData data) {
+		if (rotation == null) return;
 		if (data instanceof Orientable) {
 			Orientable orientable = (Orientable) data;
 			Set<Axis> axes = orientable.getAxes();
