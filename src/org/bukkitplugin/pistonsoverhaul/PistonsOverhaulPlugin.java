@@ -16,6 +16,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.world.WorldSaveEvent;
 import org.bukkit.inventory.ItemStack;
@@ -103,7 +104,6 @@ public class PistonsOverhaulPlugin extends BukkitPlugin implements Listener {
 		}
 	}
 	
-	@EventHandler(priority = EventPriority.NORMAL)
 	public void onQuit(PlayerQuitEvent e) {
 		Player player = e.getPlayer();
 		if (player.hasMetadata("Passenger")) {
@@ -111,6 +111,12 @@ public class PistonsOverhaulPlugin extends BukkitPlugin implements Listener {
 			player.setGravity(true);
 			player.removeMetadata("Passenger", this);
 		}
+	}
+	
+	@EventHandler(priority = EventPriority.LOW)
+	public void onKick(PlayerKickEvent e) {
+		Player player = e.getPlayer();
+		if (player.hasMetadata("Passenger") && e.getReason().equals("Flying is not enabled on this server")) e.setCancelled(true);
 	}
 	
 }

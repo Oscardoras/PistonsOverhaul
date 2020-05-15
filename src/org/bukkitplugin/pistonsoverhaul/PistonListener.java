@@ -18,6 +18,7 @@ import org.bukkit.block.data.Directional;
 import org.bukkit.block.data.Orientable;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.FallingBlock;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -177,7 +178,7 @@ public class PistonListener implements Listener {
 		fallingBlock.setVelocity(vec);
 		
 		for (Entity passenger : fallingBlock.getWorld().getNearbyEntities(fallingBlock.getLocation().add(0, 1, 0), 0.5d, 0.5d, 0.5d)) {
-			if (!passenger.hasMetadata("MovableBlock")) {
+			if (!passenger.hasMetadata("MovableBlock") && (!(passenger instanceof Player) || !((Player) passenger).isFlying())) {
 				passenger.setGravity(false);
 				String uuid = UUID.randomUUID().toString();
 				passenger.setMetadata("Passenger", new FixedMetadataValue(PistonsOverhaulPlugin.plugin, uuid));
