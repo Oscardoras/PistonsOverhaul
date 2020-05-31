@@ -185,7 +185,7 @@ public class PistonListener implements Listener {
 				Bukkit.getScheduler().runTaskLater(PistonsOverhaulPlugin.plugin, () -> {
 					if (!passenger.hasMetadata("Passenger") || passenger.getMetadata("Passenger").get(0).asString().equals(uuid)) {
 						passenger.setGravity(true);
-						passenger.setVelocity(new Vector(0d, 0.1d ,0d));
+						passenger.setVelocity(new Vector(0d, 0.3d ,0d));
 						passenger.removeMetadata("Passenger", PistonsOverhaulPlugin.plugin);
 					}
 				}, 2);
