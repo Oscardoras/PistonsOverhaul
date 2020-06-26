@@ -1,4 +1,4 @@
-package org.bukkitplugin.pistonsoverhaul;
+package me.oscardoras.pistonsoverhaul;
 
 
 import org.bukkit.Location;

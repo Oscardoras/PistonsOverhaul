@@ -1,4 +1,4 @@
-package org.bukkitplugin.pistonsoverhaul.movingblock;
+package me.oscardoras.pistonsoverhaul.movingblock;
 
 import org.bukkit.Location;
 import org.bukkit.block.Block;

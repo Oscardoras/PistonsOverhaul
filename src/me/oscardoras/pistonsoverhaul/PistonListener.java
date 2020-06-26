@@ -1,4 +1,4 @@
-package org.bukkitplugin.pistonsoverhaul;
+package me.oscardoras.pistonsoverhaul;
 
 
 import java.util.ArrayList;
@@ -26,9 +26,10 @@ import org.bukkit.event.block.BlockPistonExtendEvent;
 import org.bukkit.event.entity.EntityChangeBlockEvent;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.util.Vector;
-import org.bukkitplugin.pistonsoverhaul.movingblock.MovingBlock;
-import org.bukkitplugin.pistonsoverhaul.movingblock.SlidingMovingBlock;
-import org.bukkitplugin.pistonsoverhaul.movingblock.TurningMovingBlock;
+
+import me.oscardoras.pistonsoverhaul.movingblock.MovingBlock;
+import me.oscardoras.pistonsoverhaul.movingblock.SlidingMovingBlock;
+import me.oscardoras.pistonsoverhaul.movingblock.TurningMovingBlock;
 
 public class PistonListener implements Listener {
 	

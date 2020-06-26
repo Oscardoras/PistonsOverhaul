@@ -1,4 +1,4 @@
-package org.bukkitplugin.pistonsoverhaul;
+package me.oscardoras.pistonsoverhaul;
 
 
 import java.util.HashMap;
@@ -6,7 +6,8 @@ import java.util.Map;
 
 import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkitutils.io.ConfigurationFile;
+
+import me.oscardoras.spigotutils.io.ConfigurationFile;
 
 public class MovableBlock {
 	

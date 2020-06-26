@@ -1,4 +1,4 @@
-package org.bukkitplugin.pistonsoverhaul;
+package me.oscardoras.pistonsoverhaul;
 
 
 import java.util.ArrayList;
@@ -22,8 +22,9 @@ import org.bukkit.event.world.WorldSaveEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.util.Vector;
-import org.bukkitutils.BukkitPlugin;
-import org.bukkitutils.io.TranslatableMessage;
+
+import me.oscardoras.spigotutils.BukkitPlugin;
+import me.oscardoras.spigotutils.io.TranslatableMessage;
 
 public class PistonsOverhaulPlugin extends BukkitPlugin implements Listener {
 	

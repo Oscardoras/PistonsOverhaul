@@ -1,11 +1,12 @@
-package org.bukkitplugin.pistonsoverhaul.movingblock;
+package me.oscardoras.pistonsoverhaul.movingblock;
 
 
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.util.Vector;
-import org.bukkitplugin.pistonsoverhaul.Rotation;
+
+import me.oscardoras.pistonsoverhaul.Rotation;
 
 public class TurningMovingBlock extends MovingBlock {
 	
