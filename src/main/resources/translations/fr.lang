@@ -1,0 +1,4 @@
+piston_type.default=Défaut
+piston_type.sliding=Coulissant
+piston_type.turning_left=Tournant à gauche
+piston_type.turning_right=Tournant à droite

@@ -1,0 +1,6 @@
+name: PistonsOverhaul
+version: 2.1.0
+api-version: 1.18
+description: "Adds new modes for pistons."
+author: oscardoras
+main: me.oscardoras.pistonsoverhaul.PistonsOverhaulPlugin
