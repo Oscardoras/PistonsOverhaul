@@ -38,7 +38,7 @@ public class PistonListener implements Listener {
 		Block piston = e.getBlock();
 		int type = new MovableBlock(piston).getPistonType();
 		if (type == 1 || type == 2 || type == 3) {
-			if (type != 1) e.setCancelled(true);
+			e.setCancelled(true);
 			
 			List<Block> blocks = getBlocks(piston, PistonsOverhaulPlugin.plugin.maxBlocks, type != 1);
 			if (blocks.isEmpty()) return;

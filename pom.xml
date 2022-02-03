@@ -40,7 +40,7 @@
                 <artifactId>maven-antrun-plugin</artifactId>
                 <configuration>
                     <tasks>
-                        <copy file="target/pistonsoverhaul-1.0-SNAPSHOT.jar" todir="~"/>
+                        <copy file="target/pistonsoverhaul-1.0-SNAPSHOT.jar" todir=""/>
                     </tasks>
                 </configuration>
                 <executions>
